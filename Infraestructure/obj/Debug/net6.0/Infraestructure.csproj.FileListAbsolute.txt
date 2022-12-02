@@ -1,0 +1,17 @@
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Infraestructure.deps.json
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Infraestructure.dll
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Infraestructure.pdb
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Application.dll
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Domain.dll
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Application.pdb
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\bin\Debug\net6.0\Domain.pdb
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.AssemblyInfo.cs
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.csproj.CopyComplete
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.dll
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\refint\Infraestructure.dll
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\Infraestructure.pdb
+C:\Users\ponce\RiderProjects\Marvel\Infraestructure\obj\Debug\net6.0\ref\Infraestructure.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "iFvgR3c60AK3ZHnauZpCBv+UFQT2w2nb709fC+n51oklnpe/YI1rT8UiD6od6IxCUAD0B8HUjL2pXQAo7w0mrg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponce\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\ponce\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
+    "C:\\Users\\ponce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
