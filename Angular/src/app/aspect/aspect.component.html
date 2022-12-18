@@ -1,0 +1,11 @@
+<h2>Aspects</h2>
+<a routerLink="/aspect-add/">+</a>
+<div *ngFor="let item of aspects">
+  <div class="element">
+    <div class="data">{{item.name}}</div>
+    <div class="actions">
+      <a routerLink="/aspect-detail/{{item.id}}">Edit</a>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </div>
+  </div>
+</div>

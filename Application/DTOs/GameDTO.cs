@@ -4,13 +4,12 @@ namespace Application.DTOs;
 
 public class GameDTO
 {
-    public string Name { get; set; }
     public bool Result { get; set; }
-    public User User { get; set; }
-    public ModularEncounter ModularEncounter { get; set; }
-    public Difficulty Difficulty { get; set; }
-    public Scenario Scenario { get; set; }
+    public int AspectId { get; set; }
+    public int HeroId { get; set; }
+    public int DifficultyId { get; set; }
+    public int ScenarioId { get; set; }
     public bool SchemeEmpty { get; set; }
-    public bool SceondarySchemeEmpty { get; set; }
+    public bool SecondarySchemeEmpty { get; set; }
     public bool NotMinions { get; set; }
 }

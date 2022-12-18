@@ -63,6 +63,9 @@ public class AspectController : ControllerBase
     [Route("{Id}")]
     public IActionResult UpdateAspect(int Id, Aspect aspect)
     {
+
+        if (Id != aspect.Id)
+            return BadRequest("Url ID and body Id are not equals");
         try
         {
             return Ok(_aspectService.UpdateAspect(Id, aspect));

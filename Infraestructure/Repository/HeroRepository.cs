@@ -21,7 +21,12 @@ public class HeroRepository : IHeroRepository
 
     public Hero GetHeroById(int Id)
     {
-        return _heroDbContext.HeroTable.Find(Id);
+        
+        _heroDbContext.ChangeTracker.LazyLoadingEnabled = false;
+        Hero h =_heroDbContext.Find<Hero>(Id);
+        Console.Write(h.Content.Name);
+       // Hero h = _heroDbContext.HeroTable.Find(Id);
+        return h;
     }
 
     public List<Hero> GetAllHeroes()

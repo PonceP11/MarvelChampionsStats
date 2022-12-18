@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infraestructure;
 
@@ -30,7 +31,9 @@ public class AspectRepository : IAspectRepository
 
     public Aspect UpdateAspect(int Id, Aspect aspect)
     {
-        _aspectDbContext.AspectTable.Update(aspect);
+       
+        _aspectDbContext.Entry(aspect).State = EntityState.Modified;
+        //_aspectDbContext.AspectTable.Update(aspect);
         _aspectDbContext.SaveChanges();
         return aspect;
     }

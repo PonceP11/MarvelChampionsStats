@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2>Create Hero</h2>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+  <div>
+    <label for="hero-content">Hero content: </label>
+    <select [(ngModel)]="hero.contentId">
+      <option *ngFor="let item of contents" [ngValue]="item.id">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>

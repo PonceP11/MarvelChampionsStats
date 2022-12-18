@@ -1,0 +1,11 @@
+<h2>Scenario</h2>
+<a routerLink="/scenario-add/">+</a>
+<div *ngFor="let item of scenarios">
+  <div class="element">
+    <div class="data">{{item.name}} </div>
+    <div class="actions">
+      <a routerLink="/scenario-detail/{{item.id}}">Edit</a>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </div>
+  </div>
+</div>

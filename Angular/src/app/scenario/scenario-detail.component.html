@@ -1,0 +1,19 @@
+<div *ngIf="scenario">
+  <h2>{{scenario.name | uppercase}} Details</h2>
+
+  <div>
+    <label for="scenario-name">Scenario name: </label>
+    <input id="scenario-name" [(ngModel)]="scenario.name" placeholder="Scenario "/>
+  </div>
+  <div>
+    <label for="scenario-content">Scenario content: </label>
+    <select [(ngModel)]="scenario.contentId">
+      <option *ngFor="let item of contents" [ngValue]="item.id">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>

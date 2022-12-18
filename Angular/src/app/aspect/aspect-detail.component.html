@@ -1,0 +1,14 @@
+<div *ngIf="aspect">
+  <h2>{{aspect.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{aspect.id}}</div>
+  <div>
+    <label for="aspect-name">Aspect name: </label>
+    <input id="aspect-name" [(ngModel)]="aspect.name" placeholder="Aspect name"/>
+  </div>
+  <div>
+    <label for="aspect-color">Aspect color: </label>
+    <input id="aspect-color" [(ngModel)]="aspect.color" placeholder="Aspect color"/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>

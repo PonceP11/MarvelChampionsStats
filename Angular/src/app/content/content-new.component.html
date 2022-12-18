@@ -1,0 +1,22 @@
+<div *ngIf="content">
+  <h2>Create Content</h2>
+  <div>
+    <label for="content-name">Content name: </label>
+    <input id="content-name" [(ngModel)]="content.name" placeholder="Content name"/>
+  </div>
+  <div>
+    <label for="content-type">Content type: </label>
+    <select id="content-type" [(ngModel)]="content.type" placeholder="Content type">
+      <option>Hero</option>
+      <option>Expansion</option>
+      <option>Base</option>
+      <option>Scenario</option>
+    </select>
+  </div>
+  <div>
+    <label for="content-wave">Content wave: </label>
+    <input id="content-wave" [(ngModel)]="content.wave" placeholder="Content wave"/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>

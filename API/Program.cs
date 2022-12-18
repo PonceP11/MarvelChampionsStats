@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DBContext>(options => options.UseSqlite(
+builder.Services.AddDbContext<DBContext>(options => options.UseLazyLoadingProxies().UseSqlite(
     "Data source=db.db"
 ));
 /*builder.Services.AddDbContext<HeroDBContext>(options => options.UseSqlite(
@@ -51,8 +51,12 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
                      policy =>
                      {
-                        policy.WithOrigins("*");
+                        //policy.WithOrigins("*");
+                        policy.AllowAnyMethod();
+                        policy.AllowAnyHeader();
+                        policy.AllowAnyOrigin();
                      });
+
 });
 
 builder.Services.AddScoped<IDeckService, DeckService>();
@@ -85,7 +89,7 @@ var config = new MapperConfiguration(conf =>
     conf.CreateMap<ScenarioDTO, Scenario>();
     conf.CreateMap<ContentDTO, Content>();
     conf.CreateMap<DifficultyDTO, Difficulty>();
-    conf.CreateMap<GameDTO, Difficulty>();
+    conf.CreateMap<GameDTO, Game>();
 });
 
 var mapper = config.CreateMapper();

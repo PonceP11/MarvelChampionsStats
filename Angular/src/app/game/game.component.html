@@ -1,0 +1,15 @@
+<h2>Game</h2>
+<a routerLink="/game-add/">+</a>
+<div *ngFor="let item of games">
+  <div class="element">
+    <div class="data">{{item.id}}</div>
+    <div class="data">{{item.hero.name}}</div>
+    <div class="data">{{item.aspect.name}}</div>
+    <div class="data">{{item.scenario.name}}</div>
+    <div class="data">{{item.difficulty.name}}</div>
+    <div class="actions">
+      <a routerLink="/game-detail/{{item.id}}">Edit</a>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<h2>Top Heroes</h2>
+<a routerLink="/hero-add/">+</a>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+     routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+<div *ngFor="let item of heroes">
+  <div class="element">
+    <div class="data">{{item.name}}</div>
+    <div class="actions">
+      <a routerLink="/hero-detail/{{item.id}}">Edit</a>
+      <button  (click)="onDelete(item.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
+<app-hero-search></app-hero-search>

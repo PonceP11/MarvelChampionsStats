@@ -1,0 +1,43 @@
+<div *ngIf="game">
+  <h2>Game details</h2>
+
+  <div>
+    <label for="game-result">Game result: </label>
+    <input id="game-result" type="checkbox" [(ngModel)]="game.result"/>
+  </div>
+  <div>
+    <label for="game-hero">Hero played: </label>
+    <select [(ngModel)]="game.heroId">
+      <option *ngFor="let item of heroes" [ngValue]="item.id">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+  <div>
+    <label for="game-aspect">Aspect played: </label>
+    <select [(ngModel)]="game.aspectId">
+      <option *ngFor="let item of aspects" [ngValue]="item.id">
+        {{item.name}}
+      </option>
+    </select>
+  </div>
+  <div>
+  <label for="game-scenario">Scenario played: </label>
+  <select [(ngModel)]="game.scenarioId">
+    <option *ngFor="let item of scenarios" [ngValue]="item.id">
+      {{item.name}}
+    </option>
+  </select>
+</div>
+  <div>
+<label for="game-difficulty">Game difficulty: </label>
+<select [(ngModel)]="game.difficultyId">
+  <option *ngFor="let item of difficulties" [ngValue]="item.id">
+    {{item.name}}
+  </option>
+</select>
+</div>
+
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>

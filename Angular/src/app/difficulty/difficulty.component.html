@@ -1,0 +1,11 @@
+<h2>Difficulty</h2>
+<a routerLink="/difficulty-add/">+</a>
+<div *ngFor="let item of difficulties">
+  <div class="element">
+    <div class="data">{{item.name}}</div>
+    <div class="actions">
+      <a routerLink="/difficulty-detail/{{item.id}}">Edit</a>
+      <button (click)="onDelete(item.id)">Delete</button>
+    </div>
+  </div>
+</div>

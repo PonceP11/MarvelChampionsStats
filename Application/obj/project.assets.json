@@ -8,19 +8,27 @@
           "Microsoft.CSharp": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FluentValidation/11.2.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/FluentValidation.dll": {}
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -164,19 +172,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ponce\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\ponce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Application\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ponce\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -188,8 +196,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ponce\\RiderProjects\\Marvel\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Domain\\Domain.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Domain\\Domain.csproj"
             }
           }
         }
@@ -229,7 +237,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

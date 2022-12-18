@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "na1VAJ3sXPA7+YAbrxHIdL5EkUBgxgIXaTmx7OJyPhXn7dMLTS4l1nLXuyZWrlaKSerIPTIWSUxQP43ApmAqiA==",
+  "dgSpecHash": "PF8CpWDgVfc7gL7lBfkEghSiXMmk8uWaHQTtKZ5KvL9SjRG1IeoATXbqEvDd/QRxCiCWqwveg5mei4gkVfRJlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ponce\\RiderProjects\\Marvel\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\MarvelChampionsStats\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
