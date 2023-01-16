@@ -25,7 +25,8 @@ import { DifficultyDetailsComponent } from './difficulty/difficulty-details.comp
 import { ScenarioComponent } from './scenario/scenario.component';
 import { ScenarioDetailComponent } from './scenario/scenario-detail.component';
 import { GameComponent } from './game/game.component';
-import { GameDetailComponent } from './game/game-detail.component'
+import { GameDetailComponent } from './game/game-detail.component';
+import { MainComponent } from './main/main.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { GameDetailComponent } from './game/game-detail.component'
     ScenarioComponent,
     ScenarioDetailComponent,
     GameComponent,
-    GameDetailComponent
+    GameDetailComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
